@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 13.28px;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #66717E;
+    flex-direction: column;
+    color: white;
+}
+
+
+#title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+#name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.user-container {
+    min-width: min(100vw, 450px);
+    height: auto;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 10px 5px 10px;
+    margin-top: 15px;
+}
+
+#direction-text {
+    color: gray;
+    text-align: center;
+}
+
+.input-container {
+    margin-top: 10px;
+}
+
+input:focus {
+    outline: none;
+  }
+
+
+#text-input {
+    border: none;
+    border-bottom: 2px #383B53 solid;
+}
+
+#check-btn {
+    min-width: 95px;
+    border: none;
+    border-radius: 20px;
+    background-color: #383B53;
+    color: white;
+    margin-left: 10px;
+    padding: 2px 0;
+}
+
+#result {
+    font-size: 1.5rem;
+    text-align: center;
+    color:#383B53;
+    margin-top: 10px;
+}
+
+.definition-container {
+    min-width: min(100vw, 450px);
+    max-width: 450px;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: #383B53;
+    color: white;
+}
+
+.italicize {
+    font-style: italic;
+}
