@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #403D39;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #CCC5B9;
+    flex-direction: column;
+}
+
+#title {
+    min-width: min(100vw, 450px);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+#name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.user-container {
+    min-width: min(100vw, 450px);
+    height: auto;
+    flex-direction: column;
+    border: 5px solid #403D39;
+    padding: 20px;
+    background-color: #B8B1A6;
+}
+
+#direction-text {
+    font-weight: 1500;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#number {
+    width: 90%;
+    height: 60px;
+    border: 1px solid #403D39;
+    font-size: 2.5rem;
+    padding: 6px 12px;
+    margin: 10px 0;
+}
+
+#number:focus {
+    outline: none;
+}
+
+#convert-btn {
+    width: 90%;
+    height: 60px;
+    font-size: 1.75rem;
+    background-color: #403D39;
+    color: #FFFCF2;
+    margin-top: 10px;
+}
+
+#conversion-container {
+    display: none;
+    height: auto;
+    min-width: 470px;
+    max-width: 470px;
+    margin-top: 20px;
+    text-align: center;
+    border: 5px solid #403D39;
+    padding: 10px 20px;
+    background-color: #B8B1A6;
+}
+
+#output {
+    font-size: 1.75rem;
+    text-align: center;
+}
