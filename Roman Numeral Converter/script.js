@@ -25,9 +25,13 @@ const numerals = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
 let error = false
 
 convertBtn.addEventListener("click", () => {
-    val = numberInput.value
+    const val = numberInput.value
+    console.log(val)
 
-    if (val < 0) {
+    if (!val) {
+        errorMsg(2)
+        return
+    } else if (val < 0) {
         errorMsg(1)
         return
     } else if (val > 3999) {
@@ -54,9 +58,11 @@ function errorMsg(msg) {
     outputContainer.style.color = "#850000"
 
     if (msg === 1) {
-        outputText.innerHTML = "Please input a number greater than or equal to 1."
-    } else {
-        outputText.innerHTML = "Please input a number less than or equal to 3999."
+        outputText.innerHTML = "Please enter a number greater than or equal to 1"
+    } else if (msg === 0) {
+        outputText.innerHTML = "Please enter a number less than or equal to 3999"
+    } else if (msg === 2) {
+        outputText.innerHTML = "Please enter a valid number"
     }
 }
 
