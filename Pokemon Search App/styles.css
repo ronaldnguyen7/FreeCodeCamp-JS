@@ -41,11 +41,11 @@
     border-radius: 10px;
     border: none;
     height: 40px;
+    color: black;
 }
 
 #search-input:focus {
     outline: none;
-    color: black;
 }
 
 #search-button {
@@ -127,6 +127,7 @@
     background-color: var(--container-background-color);
     border-radius: 20px;
     padding: 5px;
+    min-height: 48px;
 }
 
 /* Pokémon Type Colors */
